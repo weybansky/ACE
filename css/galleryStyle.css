@@ -1,0 +1,67 @@
+body{
+	background-color: smokewhite;
+}
+
+.modalImage{
+	width:800px;
+	height:700px;
+	border-radius: 5px;
+	padding: 0px;
+}
+
+nav#main{
+	background-color: #0d59afd6;
+}
+/*Image Section Styling*/
+
+section .imageContainer{
+	margin-top: 50px;
+	/*background-color: #ddd;*/
+	width: 983px;
+	border-radius: 5px;
+}
+
+section#imageSection div.row > div{
+	padding: 0px;
+	box-shadow: 0px 5px 2px #ddd; 
+	border-radius: 5px;
+	width: 300px;
+	height: 300px;
+	margin-right: 40px;
+	margin-bottom: 30px;
+	opacity: 0.2;
+	-webkit-transition: opacity 1s;/*compatibility with webkit browsers*/
+	transition: opacity 1s;
+	position: relative;
+	z-index: 3;
+}
+
+section#imageSection div.row img{
+	width:300px;
+	height: 300px;
+	border-radius: 5px;
+}
+
+section#imageSection div.row > div:hover{
+	opacity: 1;
+}
+
+section#imageSection div.row > div.lastImage{
+	margin-right: 0px;
+}
+
+div#myModal div.imgHolder{
+	width: 830px;
+	height: 700px;
+	border-radius: 5px;
+	padding: 0px;
+}
+
+section.imageOverlay{
+
+	height: 1370px;
+	width: 3950px;
+	background-color: black;
+	opacity: 0.65;
+	margin-top: -1370px;
+}

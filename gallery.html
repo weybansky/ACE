@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ace|Gallery</title>
+	 <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/galleryStyle.css">
+
+</head>
+<body>
+    <nav id="links" class="">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <ul>
+                <li><a href="">OAU Official</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">SPAEL</a></li>
+                <li><a href="">Project Deliveries</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav id="main">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="logo col-md-1 col-sm-1">
+            <img src="img/logo.png" alt="Ace Logo" class="img-responsive">
+          </div>
+          <div class="title col-md-5 col-sm-5">
+            <h3>African Center of Excellence</h3>
+            <p>IN SOFTWARE ENGINEERING</p>
+          </div>
+          <div class="menu col-md-6 col-sm-6">
+            <ul>
+              <li class="searchhide"><a href="index.html">Home</a></li>
+              <li class="searchhide"><a href="">About</a></li>
+              <li class="searchhide">
+                <a href="">Downloads</a>
+                <!-- <ul class="drop">
+                  
+                </ul> -->
+
+              </li>
+              <li>
+                <input type="text" name="search"
+                id="search" class="searc">
+              </li>
+              <li>
+                <a href="#" onmouseup="showSearch()" id="searchLogo">
+                <i class="fas fa-search realogo"></i>
+                </a>
+              </li>
+              <li ><a href="" class="btn btn-primary btn-lg" style="padding-right: 20px;padding-left: 20px; font-weight: 100;" >Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="imageSection">
+    	<div class="container-fluid imageContainer">
+    		<div class="row">
+    			<div class="col-md-4 firstImage" data-toggle="modal" data-target="#myModal">
+    				<img src="img/back.jpg" onmouseover="populateModal(this)">
+    			</div>
+    			<div class="col-md-4" data-toggle="modal" data-target="#myModal">
+    				<img src="img/back8.jpg" alt="" onclick="populateModal(this)">
+    			</div>
+    			<div class="col-md-4 lastImage" data-toggle="modal" data-target="#myModal">
+    				<img src="img/back7.jpg" alt="" onclick="populateModal(this)">
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="col-md-4 firstImage" data-toggle="modal" data-target="#myModal">
+    				<img src="img/back1.jpg" alt="" onclick="populateModal(this)">
+    			</div>
+    			<div class="col-md-4" data-toggle="modal" data-target="#myModal">
+    				<img src="img/back2.jpg" alt="" onclick="populateModal(this)">
+    			</div>
+    			<div class="col-md-4 lastImage" data-toggle="modal" data-target="#myModal">
+    				<img src="img/back3.jpg" alt="" onclick="populateModal(this)">
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="col-md-4 firstImage" data-toggle="modal" data-target="#myModal">
+    				<img src="img/back4.jpg" alt="" onclick="populateModal(this)">
+    			</div>
+    			<div class="col-md-4" data-toggle="modal" data-target="#myModal">
+    				<img src="img/back5.jpg" alt="" onclick="populateModal(this)">
+    			</div>
+    			<div class="col-md-4 lastImage" data-toggle="modal" data-target="#myModal">
+    				<img src="img/back6.jpg" alt="" onclick="populateModal(this)">
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="col-md-4 firstImage" data-toggle="modal" data-target="#myModal">
+    				<img src="img/back9.jpg" alt="" onclick="populateModal(this)">
+    			</div>
+    			<div class="col-md-4" data-toggle="modal" data-target="#myModal">
+    				<img src="img/back10.jpg" alt="" onclick="populateModal(this)">
+    			</div>
+    			<div class="col-md-4 lastImage" data-toggle="modal" data-target="#myModal">
+    				<img src="img/back11.jpg" alt="" onclick="populateModal(this)">
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+  <section class="imageOverlay">
+    
+  </section>
+
+    <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog imgHolder">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+         <img src="" alt="" class="src modalImage" onclick="downloadImage(this)">
+        </div>
+      </div>
+      
+    </div>
+  </div>
+   <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
