@@ -28,7 +28,6 @@ function transitionAnimation(){
 		counter+=1;
 }
 
-
 function changeBackground(){
 	
 	imgcounter+=1;
@@ -129,7 +128,6 @@ function setInt(){
 }
 
 
-=======
 // function populateModal(content){
 // 	image=$('.'+content).children('img:first');
 // 	$(image).addClass('modalImage');

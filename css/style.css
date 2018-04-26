@@ -202,6 +202,23 @@ section#coverOverlay{
 
 }
 
+section#coverOverlay{
+
+	margin-bottom: 20px;
+	/*background: url(../img/deolu2.jpg) no-repeat;*/
+	/*background-position: center -220px;*/
+	/*background-size: cover;*/
+	height: 630px;
+	padding-top: 170px;
+	margin-top: -650px;
+	background-attachment: fixed;
+	box-shadow: 0px 1px 20px #555;
+	-webkit-transition:background 2s ease-in-out;
+  	opacity: 0.75;
+  	background-color: black;
+
+}
+
 section#our-goalss{
 
 	margin-top: -500px;
@@ -256,6 +273,12 @@ section#our-goalss > div.goals p a{
 	margin-left: -100px;
 }
 
+
+#contactus:hover{
+	margin-left: -100px;
+}
+
+
 section#newSlider{
 	margin-top: 200px;
 	margin-bottom: 100px;
@@ -275,6 +298,16 @@ section#news div.row > div.image{
 	/*-webkit-transition:transform 1s ease-in-out;*/
 	box-shadow: none;
 	min-height: 200px;
+}
+
+section#news div.row img.news{
+	height: 200px;
+	width: 200px;
+	display: inline-block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 }
 
 section#news div.row img.news{
@@ -669,8 +702,26 @@ div.dav{
 	display: inline-block;
 }
 
+/*--------------------------------------*/
+.events{
+    background-color: white;
+    height: 500px;
+}
 
+section.events div.container{
+	margin-left: 130px;
+	margin-top: 50px;
+}
 
+section.events div.sampleevents{
+    width: 250px;
+    height: 300px;
+    border: 1px solid #0d59afd6;
+    box-shadow: 1px 3px 9px #0d59afd6; 
+    border-radius: 12px;
+    background-color: white;
+    -webkit-transition:background-color 1s ease-in-out;
+}
 
 /*--------------------------------------*/
 .events{
