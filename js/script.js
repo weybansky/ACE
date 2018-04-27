@@ -127,6 +127,7 @@ function setInt(){
 	myvar=setInterval(transitionAnimation,2000);
 }
 
+
 // function populateModal(content){
 // 	image=$('.'+content).children('img:first');
 // 	$(image).addClass('modalImage');
@@ -154,4 +155,5 @@ function downloadImage(content){
 	 window.moveTo(0,3000);
 
 }
+
 

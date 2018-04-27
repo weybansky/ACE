@@ -1,7 +1,7 @@
-/*@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
-*/
+
 body{
 	
 	font-weight: 100;
@@ -27,10 +27,10 @@ body{
 
 nav#links{
 	position: relative;
-	z-index: 8;
 	height: 30px;
 	font-size: 14px;
 	background-color: #333333d6;
+	z-index: 2;
 	/*background-color: #0d59afd6;*/
 }
 
@@ -65,7 +65,6 @@ nav#links ul > li a:hover{
 nav#main{
 	
 	position: relative;
-	z-index: 7;
 	 height: 100px;
 	-webkit-transition: background-color 1s;
 	-webkit-transistion: position 0.5s ease-in-out;
@@ -156,18 +155,13 @@ nav#main div.menu li > input{
 
 nav#main div.menu li > a:hover{
 	text-decoration: none;
-	color: #fa9e3c;
+	color: grey;
 }
 
-/*nav#main div.menu li > i:hover{
-	
-	color: #fa9e3c;
-}
-*/
 
 section#our-goals{
 	margin-bottom: 20px;
-	background: url(../img/back9.jpg) no-repeat;
+	background: url(../img/deolu2.jpg) no-repeat;
 	background-position: center -220px;
 	background-size: cover;
 	height: 650px;
@@ -175,80 +169,29 @@ section#our-goals{
 	margin-top: -180px;
 	background-attachment: fixed;
 	box-shadow: 0px 1px 20px #555;
-	-webkit-transition:background 2s ease-in-out;
-  	/*opacity: 0.85;*/
-  	/*background-color: black;*/
-  	/*filter: alpha(opacity=60); /* For IE8 and earlier */*/
-	/*position: relative;
-	z-index: 6;*/
-
-
 }
 
-section#coverOverlay{
-
-	margin-bottom: 20px;
-	/*background: url(../img/deolu2.jpg) no-repeat;*/
-	/*background-position: center -220px;*/
-	/*background-size: cover;*/
-	height: 630px;
-	padding-top: 170px;
-	margin-top: -650px;
-	background-attachment: fixed;
-	box-shadow: 0px 1px 20px #555;
-	-webkit-transition:background 2s ease-in-out;
-  	opacity: 0.75;
-  	background-color: black;
-
-}
-
-section#coverOverlay{
-
-	margin-bottom: 20px;
-	/*background: url(../img/deolu2.jpg) no-repeat;*/
-	/*background-position: center -220px;*/
-	/*background-size: cover;*/
-	height: 630px;
-	padding-top: 170px;
-	margin-top: -650px;
-	background-attachment: fixed;
-	box-shadow: 0px 1px 20px #555;
-	-webkit-transition:background 2s ease-in-out;
-  	opacity: 0.75;
-  	background-color: black;
-
-}
-
-section#our-goalss{
-
-	margin-top: -500px;
-	position: relative;
-	z-index: 6;
-}
-
-
-section#our-goalss > div{
+section#our-goals > div{
 
 	margin: 50px auto;
 	max-width: 1000px;
 }
 
-section#our-goalss > div.goals h1{
+section#our-goals > div.goals h1{
 
 	font-size: 60px;
 	color: #fff;
 }
 
-section#our-goalss > div.goals p#aboutus{
+section#our-goals > div.goals p#aboutus{
 
-	font-weight: 400px;
+	font-weight: 100px;
 	color:white;
 	padding: 0px 70px;
 	font-size: 25px;
-
 }
 
-section#our-goalss > div.goals p a{
+section#our-goals > div.goals p a{
 	margin-top: 20px;
 	color: #fff;
 	padding: 10px 20px;
@@ -260,70 +203,28 @@ section#our-goalss > div.goals p a{
 
 	width: 200px;
 	height: 50px;
-	background-color: #fa9e3c;
+	background-color: red;
 	/*margin-top: 250px;*/
 	border-radius: 50px 0px 0px 0px;
-	position: fixed;
+	display: inline-block;
 	z-index: 2;
-	-webkit-transition:margin-left 0.4s ease-in-out;
+	position: fixed;
 
 }
 
-#contactus:hover{
-	margin-left: -100px;
-}
-
-
-#contactus:hover{
-	margin-left: -100px;
-}
-
-
-section#newSlider{
-	margin-top: 200px;
-	margin-bottom: 100px;
-}
 
 section#news{
-	-webkit-transition:margin-left 0.7s ease-in-out;
+	-webkit-transition:width 1s ease-in-out;
 	display: inline-block;
 	position: relative;
-	width: 1200px;
-	margin-left: -1300px;
-	/*min-height: 500px;*/
-
+	width: 1400px;
 }
 
 section#news div.row > div.image{
-	/*-webkit-transition:transform 1s ease-in-out;*/
 	box-shadow: none;
-	min-height: 200px;
 }
 
-section#news div.row img.news{
-	height: 200px;
-	width: 200px;
-	display: inline-block;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-}
-
-section#news div.row img.news{
-	height: 200px;
-	width: 200px;
-	display: inline-block;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-section#news div.row div.newsheader{
-
-	-webkit-transition: box-shadow 0.4s ease-in-out;
-}
-
-section#news > div.row > div.image:hover{
+section#news div.row > div.image:hover{
 	border-bottom: 0px;
 	transform: rotate(10deg);
 	content: "\f0a4"; 
@@ -339,18 +240,26 @@ section#news > div.row > div.image:hover{
 
 } 
 */
-
-section#news > div.row > div.post{
+section#news div.row > div {
 	
 	font-weight: normal;
+	-webkit-transition: box-shadow 0.4s;
+	min-height: 200px;
 	/*border-bottom: 3px solid #aaa;*/
 	box-shadow: 0px 5px 12px #ddd;
 	margin-bottom: 40px;
 }
 
-
 section#news div.newsheader1:hover{
 
+	box-shadow: 0px 35px 12px #ddd;
+}
+
+section#news div.newsheader2:hover{
+	box-shadow: 0px 35px 12px #ddd;
+}
+
+section#news div.newsheader3:hover{
 	box-shadow: 0px 35px 12px #ddd;
 }
 
@@ -405,47 +314,80 @@ section#description div > p{
 /*This is the beginning of the styling for the team page*/
 
 section#team{
-	margin-bottom:40px;
+	
+	margin-top: -120px;
+	margin-bottom:80px;
+	filter: blur(10px);
+
 }
-.teamimgcontain{
+section#team div.teamimgcontain{
 	background-image: url("../img/team.png");
-	background-repeat: round;
+	background-repeat: none;
 	width:100%;
-	height: 250px;
+	height: 350px;
 	/*opacity:1.8;*/
 	}
 
-.teamimgcontain h1{
-color: white;
-padding-top:125px;
-font-weight: bolder;
-/*margin:auto;*/
+section#teamoverlay{
+
+	background-color: black;
+	width: 100%;
+	height: 400px;
+	margin-top: -470px;
+	position: relative;
+	z-index: 1;
+	opacity:0.6;
+	padding: 180px;
 }
-div.meet h1{
+
+section#overlaydes{
+
+	margin-top: -200px;
+	margin-bottom: 200px;
+
+}
+
+section#overlaydes > div{
+	
+	text-align:center;
+	position: relative;
+	z-index: 3;
+	color: white;
+
+}
+
+section#zindex-carousel{
+	
+	height:500px;
+	margin-bottom: 80px;
+	
+}
+
+section#zindex-carousel div.contain{
+
+	height: 100%;
+	width: 100%;
+
+}
+section#zindex-carousel div.meet{
+
+	margin-bottom: 40px;
+
+}
+
+section#zindex-carousel div.meet h1{
 	font-weight: bolder;
+	text-align: center;
 	/*position: fixed;*/
 	/*z-index: 6;*/
 	/*background-color: #0d59afd6;*/
 }
 
-section#zindex-carousel{
-	height:500px;
-	margin-bottom: 80px;
-	
-}
+
+
 section#zindex-carousel img{
 		/*padding-right: 10px;*/
 		/*border-radius: 10px;*/
-}
-
-div.contain{
-	height:100%;
-	/*margin:auto;*/
-	padding-left: 200px;
-}
-div.meet{
-	margin-bottom: 40px;
-	
 }
 
 div.overlaysolz{
@@ -465,7 +407,7 @@ div.overlaysolz{
 .solz:hover .overlaysolz{
   opacity: 1;
   border:10px solid #bfbeab;
-  z-index: 5;
+  /*z-index: 5;*/
  }
  .overlaysolz p{
  	font-weight: bold;
@@ -488,7 +430,7 @@ div.overlayweybtech{
 .weybtech:hover .overlayweybtech{
   opacity: 1;
   border:10px solid #5e5449;
-  z-index: 5;
+  /*z-index: 5;*/
  }
 
  .overlayweybtech p{
@@ -512,7 +454,7 @@ div.overlaydav{
 .dav:hover .overlaydav{
   opacity: 1;
   border:10px solid #3b4ea7;
-  z-index: 5;
+  /*z-index: 5;*/
  }
  .overlaydav p{
  	font-weight: bold;
@@ -534,7 +476,7 @@ div.overlaydav{
 .dee:hover .overlaydee{
   opacity: 1;
    border:10px solid #232139;
-   z-index: 5;
+   /*z-index: 5;*/
  }
  .overlaydee p{
  	font-weight: bold;
@@ -556,7 +498,7 @@ div.overlaydav{
 .kupe:hover .overlaykupe{
   opacity: 1;
   border:10px solid #101a27;
-  z-index: 5;
+  /*z-index*/: 5;
  }
  .overlaykupe p{
  	font-weight: bold;
@@ -578,7 +520,7 @@ div.overlaydav{
 .kenny:hover .overlaykenny{
   opacity: 1;
    border:10px solid #243857;
-   z-index: 5;
+   /*z-index: 5;*/
  }
  .overlaykenny p{
  	font-weight: bold;
@@ -600,7 +542,7 @@ div.overlaydav{
 .ogo:hover .overlayogo{
   opacity: 1;
    border:10px solid #84136c;
-   z-index: 5;
+   /*z-index: 5;*/
  }
  .overlayogo p{
  	font-weight: bold;
@@ -621,56 +563,54 @@ div.dee{
 	top: 600px;
     left: 100px;
 	right: 0px;
-	z-index: 4;
+	/*z-index: 4;*/
 	
 }
 div.kupe{
 	position:absolute;
 	top: 600px;
     left: 400px;
-	z-index: 4;
+	/*z-index: 4;*/
 }
 div.kenny{
 	position: absolute;
 	top: 550px;
     left: 700px;
-	z-index: 3;
+	/*z-index: 3;*/
 }
 div.ogo{
 	position:absolute;
 	top: 600px;
     left: 1000px;
-	z-index: 4;
+	/*z-index: 4;*/
 }
 div.weybtech{
 	top: 460px;
 	left: 541px;
 	position: absolute;
-	z-index: 2; 
+	/*z-index: 2; */
 }
 .weybtech:hover .weybtech{
-	z-index: 5;
+	/*z-index: 5;*/
 }
 div.solz{
 	top: 400px;
 	left: 250px;
 	position: absolute;
-	z-index: 1;
+	/*z-index: 1;*/
 }
 div.dav{
 	top: 390px;
     left: 829px;
 	position: absolute;
-	z-index: 1;
-}
+	/*z-index: 1;*/
 }
 
 /*THE NEXT SECTION*/
-#downloads{
-	background-color: #333333d6;
-	/*opacity:1;*/
+/*#downloads{
+	background-color: #333333;
 	width: 100%;
-	margin-bottom: 200px;
+	height: 200px;
 }
 #downloads li{
 	list-style-type: none; 
@@ -700,63 +640,54 @@ div.dav{
 .drpdwn li{border-bottom: 1px solid grey;}
 .alldropdowns:hover ul{
 	display: inline-block;
-}
+}*/
 
-/*--------------------------------------*/
-.events{
-    background-color: white;
-    height: 500px;
-}
+section#downloads{
 
-section.events div.container{
-	margin-left: 130px;
-	margin-top: 50px;
-}
-
-section.events div.sampleevents{
-    width: 250px;
-    height: 300px;
-    border: 1px solid #0d59afd6;
-    box-shadow: 1px 3px 9px #0d59afd6; 
-    border-radius: 12px;
-    background-color: white;
-    -webkit-transition:background-color 1s ease-in-out;
-}
-
-/*--------------------------------------*/
-.events{
-    background-color: white;
-    height: 500px;
-}
-
-section.events div.container{
-	margin-left: 130px;
-	margin-top: 50px;
-}
-
-section.events div.sampleevents{
-    width: 250px;
-    height: 300px;
-    border: 1px solid #0d59afd6;
-    box-shadow: 1px 3px 9px #0d59afd6; 
-    border-radius: 12px;
-    background-color: white;
-    -webkit-transition:background-color 1s ease-in-out;
-}
-
-section.events div.sampleevents:hover{
-    background-color: goldenrod;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-section.events div.row{
-	padding-top: 50px;
-}
-
-footer{
-	height: 60px;
-	background-color: black;
+	background-color: #333333;
+	width: 100%;
+	height: 100%;
 
 }
+
+
+section#downloads div.listdivs{
+
+	display: inline-block;
+	margin-left: 40px;
+	display: none;
+	max-height: 100%;
+	
+}
+
+section#downloads h1{
+
+	color: white;
+
+}
+
+section#downloads div.row li.toplist{
+
+	color: #eea236;
+}
+
+section#downloads li{
+
+	color: white;
+	list-style: none;
+	margin-bottom: 10px;
+	font-weight: 400;
+}
+
+section#downloads div.row a{
+
+	text-decoration: none;
+}
+
+
+
+
+
+
+
 
