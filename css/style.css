@@ -89,6 +89,7 @@ nav#main:hover .btn{
 nav#main:hover .btn:hover{
 
 	transform: rotate(-5deg);
+	color: #0d59afd6;
 }
 
 nav#main div.row > div{
@@ -757,6 +758,17 @@ section.events div.row{
 footer{
 	height: 60px;
 	background-color: black;
+	padding-top: 30px;
+}
+
+footer.footer div.footertext{
+
+	text-align: center;
+	color: #eea236;
+	font-weight: bold;
+	letter-spacing: 2px;
+	word-spacing: 5px;
+	font-size: 15px;
 
 }
 
