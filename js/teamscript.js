@@ -1,3 +1,6 @@
+$('.page1').css('display','inline-block');
+$('.tab1').addClass('active');
+
 function page1(){
 	$('.page2').css('display','none');
 	$('.tab2').removeClass('active');
