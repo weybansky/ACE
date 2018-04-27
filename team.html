@@ -65,17 +65,24 @@
       </div>
     </nav>
     <section id="team">
-      <div width="100%">
+      <div>
         <div class="teamimgcontain">
-          <div align="center"><h1>Home/Our Team</h1></div>
         </div>
       </div>
     </section>
+
+
+    <section id="teamoverlay">
+    </section>
+
+    <section id="overlaydes">
+      <div><h1>Home/Our Team</h1></div>
+    </section>
+
     <section id="zindex-carousel">
         <div class="contain"> 
-          <div class="meet" align="center"><h1>Meet Our Team</h1></div>
+          <div class="meet" ><h1>Meet Our Team</h1></div>
           <div class="zindex">
-
             <div class="attrib solz">
               <img src="img/back7.jpg" class="attrib"/>
               <div class="overlay overlaysolz">
@@ -100,8 +107,6 @@
                 <p>Level: 400</p>
               </div>
             </div>
-          <!-- </div> -->
-          <!-- <div class="zindex-carousellower" align="centre"> -->
             <div class="attrib elect dee">
               <img src="img/back3.jpg" class="attrib">
               <div class="overlaydee">
@@ -135,19 +140,25 @@
               </div>
             </div>
           </div>
-          <!-- </div> -->
         </div>
     </section>
+    
+
     <section id="downloads">
-      <div>
-        <h1 align="center">Downloads</h1>
-        <div class="container">
-         <div class="row">
-            <div class="firstcol col-md-12 col-sm-12 col-xs-12">
+      <div class="container-fluid">
+        <div class="row">
+          <h1 align="center">Downloads</h1>
+          <div class="col-md-12 col-sm-12 col-xs-12">
+             <ul class="nav nav-tabs nav-justified">
+               <li onclick="page1()" class="tab1"><a>Download  1</a></li>
+                <li onclick="page2()" class="tab2"><a>Download 2</a></li>
+                <li onclick="page3()" class="tab3"><a>Download 3</a></li>
+              </ul>
+            <div class="listdivs page1">
               <ul>
-                <li class="alldropdowns"><a href="">Financial Management</a>
-                  <ul class="drpdwn">
-                    <li><a href="">ACE Receipt and Expenditure from inception to june 2016</a></li>
+                <li class="toplist"><i class="fas fa-angle-double-down"></i>    Financial Management</li>
+                <ul>
+                  <li> <a href="">ACE Receipt and Expenditure from inception to june 2016</a></li>
                     <li><a href="">Interim Detailed Report</a></li>
                     <li><a href="">2015 Fm</a></li>
                     <li><a href="">2014 Detailed Report</a></li>
@@ -157,16 +168,14 @@
                     <li><a href="">Externally-Generated-Revenue</a></li>
                     <li><a href="">Financial-Statements-for-theYear-Ended-2016</a></li>
                     <li><a href="">IFR-REPORT-JAN-SEPT-2017</a></li>
-                  </ul>
-                </li>
-                <li class="alldropdowns"><a href="">Management Control</a>
-                  <ul class="drpdwn">
-                    <li><a href="">Management Control Report</a></li>
-                  </ul>
-                </li>
-                <li class="alldropdowns"><a href="">Audit Report</a>
-                   <ul class="drpdwn">
-                    <li><a href="">2016 Interim Audit Report</a></li>
+                </ul>
+              </ul>
+            </div>
+            <div class="listdivs page1" style="vertical-align: 55px;">
+               <ul>
+                <li class="toplist"><i class="fas fa-angle-double-down"></i>   Audit Report</li>
+                <ul>
+                  <li><a href="">2016 Interim Audit Report</a></li>
                     <li><a href="">Audit</a></li>
                     <li><a href="">2014 AR</a></li>
                     <li><a href="">Internal-Audit-Report-ACE-OAK-Park-Jan2017-June-2017</a></li>
@@ -174,66 +183,69 @@
                     <li><a href="">Audit-Committee-Members</a></li>
                     <li><a href="">Management-Control-Report-on-Audit-of-ACE-for-the-year-ended-2016</a></li>
                     <li><a href="">Audit-Committee-Members</a></li>
-                  </ul>
-                </li>
-                <li class="alldropdowns"><a href="">Safeguard</a>
-                  <ul class="drpdwn">
-                    <li><a href="">REPORT ON TECHNICAL MEETING FOR SAFEGUARD OFFICERS OF ACE PROJECTS BY WORLD BANK SAFEGUARD TEAM. HELD AT NUC, ABUJA FROM 4TH TO 5TH OCTOBER, 2015</a></li>
-                    <li><a href="">TERMS OF REFERENCE FOR THE CONDUCT OF ESMP FOR AFRICAN CENTRE OF EXCELLENCE, OAU ICT-DRIVEN KNOWLEDGE PARK (OAK-PARK), OBAFEMI AWOLOWO UNIVERSITY, ILE-IFE, NIGERIA</a></li>
-                  </ul>  
-                </li>
-                <li class="alldropdowns"><a href="">Procurement</a>
-                  <ul class="drpdwn">
-                    <li><a href="">Goods</a></li>
-                    <li><a href="">WORKS</a></li>
-                    <li><a href="">CONSULTATION</a></li>
-                    <li><a href="">2016_PROCUREMENT-PLAN</a></li>
-                  </ul>
-                </li>
-                <li class="alldropdowns"><a href="">Proposed Calendar for Short term Course</a>
-                  <ul class="drpdwn">
-                    <li><a href="">Proposed Calendar for Short Term Course</a></li>
-                  </ul>
-                </li>
+                </ul>
               </ul>
-
             </div>
-            <div class="secondcol col-md-12 col-sm-12 col-xs-12">
-              <ul>
-                <li class="alldropdowns"><a href="">Minutes of Meeting</a>
-                  <ul class="drpdwn">
-                    <li><a href="">ACE Receipt and Expenditure from inception to june 2016</a></li>
-                  </ul>
-                </li>
+            <div class="listdivs page2" style="vertical-align: 55px;">
+               <ul>
+                <li class="toplist"><i class="fas fa-angle-double-down"></i>   ACE Receipt and Expenditure from inception to june 2016</li>
+                <ul>
                 <li><a href="">Contract Agreement</a></li>
                 <li><a href="">Notification of Award</a></li>
                 <li><a href="">Milestone 1</a></li>
                 <li><a href="">Governing Structure</a></li>
+                </ul>
               </ul>
-
             </div>
-            <div class="thirdcol col-md-12 col-sm-12 col-xs-12">
-              <ul>
-                <li class="alldropdowns"><a href="">Minutes of Meeting</a>
-                  <ul class="drpdwn">
-                    <li><a href="">ACE Receipt and Expenditure from inception to june 2016</a></li>
-                  </ul>
-                </li>
-                <li><a href="">Contract Agreement</a></li>
-                <li><a href="">Notification of Award</a></li>
-                <li><a href="">Milestone 1</a></li>
-                <li><a href="">Governing Structure</a></li>
+            <div class="listdivs page2" style="vertical-align: 55px;">
+               <ul>
+                <li class="toplist"><i class="fas fa-angle-double-down"></i>  Procurement</li>
+                <ul>
+                  <li><a href="">Goods</a></li>
+                  <li><a href="">WORKS</a></li>
+                  <li><a href="">CONSULTATION</a></li>
+                  <li><a href="">2016_PROCUREMENT-PLAN</a></li>
+
+                </ul>
               </ul>
-
             </div>
+            <div class="listdivs page2" style="vertical-align: 145px;">
+               <ul>
+                <li class="toplist"><i class="fas fa-angle-double-down"></i>  Management Control</li>
+                <ul>
+                 <li><a href="">Management Control Report</a></li>
+                </ul>
+              </ul>
+            </div>
+            <div class="listdivs page3" style="vertical-align:70px;">
+               <ul>
+                <li class="toplist"><i class="fas fa-angle-double-down"></i>  Proposed Calendar for Short term Course</li>
+                <ul>
+                 <li><a href="">Proposed Calendar for Short Term Course</a></li>
+                </ul>
+              </ul>
+            </div>
+            <div class="listdivs page3">
+               <ul>
+                <li class="toplist"><i class="fas fa-angle-double-down"></i>  Safeguard</li>
+                <ul>
+                  <li><a href="">REPORT ON TECHNICAL MEETING FOR SAFEGUARD OFFICERS OF ACE PROJECTS BY WORLD BANK<br> SAFEGUARD TEAM. HELD AT NUC, ABUJA FROM 4TH TO 5TH OCTOBER, 2015</a></li>
+                  <li><a href="">TERMS OF REFERENCE FOR THE CONDUCT OF ESMP FOR AFRICAN CENTRE <br> OF EXCELLENCE, OAU ICT-DRIVEN KNOWLEDGE PARK (OAK-PARK), OBAFEMI AWOLOWO UNIVERSITY, ILE-IFE, NIGERIA</a></li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+          </div>
         </div>
-      </div>
       </div>
     </section>
 
+
+    
     
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/teamscript.js"></script>
   </body>
 </html>
