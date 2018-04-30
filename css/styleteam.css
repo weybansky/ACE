@@ -1,3 +1,4 @@
+
 /*This is the beginning of the styling for the team page*/
 
 section#team{
@@ -65,6 +66,7 @@ section#zindex-carousel div.meet{
 section#zindex-carousel div.meet h1{
 	font-weight: bolder;
 	text-align: center;
+>>>>>>> 72f909c745cf74957510ffa79857eaef5a9f70f0
 	/*position: fixed;*/
 	/*z-index: 6;*/
 	/*background-color: #0d59afd6;*/
@@ -72,12 +74,14 @@ section#zindex-carousel div.meet h1{
 
 
 
+
 section#zindex-carousel img{
-		/*padding-right: 10px;*/
-		/*border-radius: 10px;*/
+		padding-right: 20px;
 }
 
-div.overlaysolz{
+
+
+div.overlay{
   position: absolute;
   top: 0;
   bottom: 0;
@@ -91,33 +95,21 @@ div.overlaysolz{
   padding-top: 55px;
   
  }
-.solz:hover .overlaysolz{
+.solz:hover .overlay{
   opacity: 1;
   border:10px solid #bfbeab;
-  /*z-index: 5;*/
+   z-index: 5;
  }
  .overlaysolz p{
  	font-weight: bold;
  	color: #bfbeab;
  }
-div.overlayweybtech{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0px;
-  right: 0;
-  height: inherit;
-  width: inherit;
-  opacity: 0;
-  transition: 1s ease;
-  background-color: white;
-  padding-top: 55px;
- 
- }
-.weybtech:hover .overlayweybtech{
+
+.weybtech:hover .overlay{
   opacity: 1;
   border:10px solid #5e5449;
-  /*z-index: 5;*/
+  z-index: 5;
+
  }
 
  .overlayweybtech p{
@@ -125,111 +117,50 @@ div.overlayweybtech{
  	color: #5e5449;
  }
 
-div.overlaydav{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0px;
-  right: 0;
-  height: inherit;
-  width: inherit;
-  opacity: 0;
-  transition: 1s ease;
-  background-color: white;
-  padding-top: 55px;
- }
-.dav:hover .overlaydav{
+.dav:hover .overlay{
   opacity: 1;
   border:10px solid #3b4ea7;
-  /*z-index: 5;*/
- }
+  z-index: 5; 
+}
  .overlaydav p{
  	font-weight: bold;
  	color: #3b4ea7;
  }
- div.overlaydee{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0px;
-  right: 0;
-  height: inherit;
-  width: inherit;
-  opacity: 0;
-  transition: 1s ease;
-  background-color: white;
-  padding-top: 55px;
- }
-.dee:hover .overlaydee{
+ 
+.dee:hover .overlay{
   opacity: 1;
    border:10px solid #232139;
-   /*z-index: 5;*/
+    z-index: 5;
+
  }
  .overlaydee p{
  	font-weight: bold;
  	color: #232139;
  	}
- div.overlaykupe{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0px;
-  right: 0;
-  height: inherit;
-  width: inherit;
-  opacity: 0;
-  transition: 1s ease;
-  background-color: white;
-  padding-top: 55px;
- }
-.kupe:hover .overlaykupe{
+.kupe:hover .overlay{
   opacity: 1;
   border:10px solid #101a27;
-  /*z-index*/: 5;
+   z-index: 5;
+
  }
  .overlaykupe p{
  	font-weight: bold;
  	color: #101a27;
  	}
- div.overlaykenny{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0px;
-  right: 0;
-  height: inherit;
-  width: inherit;
-  opacity: 0;
-  transition: 1s ease;
-  background-color: white;
-  padding-top: 55px;
- }
-.kenny:hover .overlaykenny{
+.kenny:hover .overlay{
   opacity: 1;
    border:10px solid #243857;
-   /*z-index: 5;*/
+   z-index: 5;
  }
  .overlaykenny p{
  	font-weight: bold;
  	color: #243857;
  }
- 	div.overlayogo{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0px;
-  right: 0;
-  height: inherit;
-  width: inherit;
-  opacity: 0;
-  transition: 1s ease;
-  background-color: white;
-  padding-top: 55px;
- }
+
 .ogo:hover .overlayogo{
   opacity: 1;
    border:10px solid #84136c;
-   /*z-index: 5;*/
+    z-index: 5;
  }
  .overlayogo p{
  	font-weight: bold;
@@ -246,136 +177,48 @@ div.overlaydav{
 	display: inline-block;
 }
 div.dee{
-	position:absolute;
-	top: 600px;
-    left: 100px;
-	right: 0px;
-	/*z-index: 4;*/
+	position:relative;
+	left: 150px;
+    bottom: 30px;
+
 	
 }
 div.kupe{
-	position:absolute;
-	top: 600px;
-    left: 400px;
-	/*z-index: 4;*/
+	position:relative;
+	left: 150px;
+    bottom: 30px;
+
 }
 div.kenny{
-	position: absolute;
-	top: 550px;
-    left: 700px;
-	/*z-index: 3;*/
+	position: relative;
+	left: 150px;
+    bottom: 80px;
 }
 div.ogo{
-	position:absolute;
-	top: 600px;
-    left: 1000px;
-	/*z-index: 4;*/
+	position:relative;
+	left: 150px;
+    bottom: 30px;
+    
 }
 div.weybtech{
-	top: 460px;
-	left: 541px;
-	position: absolute;
-	/*z-index: 2; */
+	position: relative;
+	left: 280px;
+    top: 50px;
 }
-.weybtech:hover .weybtech{
-	/*z-index: 5;*/
-}
+
 div.solz{
-	top: 400px;
-	left: 250px;
-	position: absolute;
-	/*z-index: 1;*/
-}
-div.dav{
-	top: 390px;
-    left: 829px;
-	position: absolute;
-	/*z-index: 1;*/
-}
-
-/*THE NEXT SECTION*/
-/*#downloads{
-	background-color: #333333;
-	width: 100%;
-	height: 200px;
-}
-#downloads li{
-	list-style-type: none; 
-}
-#downloads a:hover{
-	text-decoration: none;
-	color: #f19e1f;
-}
-#downloads h1{
-	color:white;
-}
-.firstcol{width: 33%;}
-.secondcol{width: 33%;}
-.thirdcol{width: 33%;}
-.firstcol,.secondcol{
-	display:inline-block;
-}
-.drpdwn{
-	width:60%;
-	display:none;
-	background-color: white;
-	z-index: 1;
-	position: absolute;
-	padding:0px;
-	border-radius: 10px;
-}
-.drpdwn li{border-bottom: 1px solid grey;}
-.alldropdowns:hover ul{
-	display: inline-block;
-}*/
-
-section#downloads{
-
-	background-color: #333333;
-	width: 100%;
-	height: 100%;
-
-}
-
-
-section#downloads div.listdivs{
-
-	display: inline-block;
-	margin-left: 40px;
-	display: none;
-	max-height: 100%;
+	left: 280px;
+	position: relative;
 	
 }
-
-section#downloads h1{
-
-	color: white;
-
+div.dav{
+	position: relative;
+	left: 280px;
 }
 
-section#downloads div.row li.toplist{
 
-	color: #eea236;
-}
 
-section#downloads li{
 
-	color: white;
-	list-style: none;
-	margin-bottom: 10px;
-	font-weight: 400;
-}
-
-section#downloads div.row a{
-
-	text-decoration: none;
-}
-
-footer{
-	height: 60px;
-	background-color: black;
-
-}
 
 
 
