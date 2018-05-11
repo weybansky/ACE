@@ -17,13 +17,14 @@ nav#main{
 section .imageContainer{
 	margin-top: 50px;
 	/*background-color: #ddd;*/
-	width: 983px;
+	width: 100%;
 	border-radius: 5px;
+	margin-left: 120px;
 }
 
-div .row{
+section#imageSection{
 
-	/*width: 100%;*/
+	width: 100%;
 }
 
 section#imageSection div.row > div{
@@ -51,8 +52,9 @@ section#imageSection div.row > div:hover{
 	opacity: 1;
 }
 
-section#imageSection div.row > div.lastImage{
-	margin-right: 0px;
+section#imageSection div.row {
+	
+	transition: all 0.5s ease-in-out;
 }
 
 div#myModal div.imgHolder{

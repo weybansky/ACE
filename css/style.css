@@ -122,6 +122,7 @@ nav#main div.logo img{
 	margin-left: auto;
 	padding-bottom: 15px;
 	max-width: 100%;
+	margin-left: 15px;
 }
 
 nav#main div.title{
@@ -226,8 +227,6 @@ nav#main div.navdrop > a:hover{
 
 @media screen and (max-width: 1250px){
 
-	
-
 	#news .img-responsive{
 
 		width: auto;
@@ -237,6 +236,12 @@ nav#main div.navdrop > a:hover{
 	section#news{
 
 		width: 100%;
+	}
+
+	nav#main div#acetitle{
+
+		margin-top: -20px;
+		font-size: 10px;
 	}
 
 }
