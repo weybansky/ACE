@@ -13,36 +13,39 @@
     <link rel="script" type="text/javascript" href="script.js">
 </head>
 <body>
-    <nav id="links" class="">
+     <nav id="links">
       <div class="container">
         <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-11 col-sm-10 col-xs-0 topnav">
               <ul>
                 <li><a href="">OAU Official</a></li>
+
                 <li><a href="team.html">Team</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
+
+              <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="">SPAEL</a></li>
                 <li><a href="">Project Deliveries</a></li>
               </ul>
+            </div>
+            <div class="col-md-1 col-sm-2 col-xs-12 topnavres">
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">Links<i class="fas fa-angle-double-down ddd"></i></a>
             </div>
         </div>
       </div>
     </nav>
 
-
-
-  <nav id="main">
+    <nav id="main">
       <div class="container-fluid">
         <div class="row">
           <div class="logo col-md-1 col-sm-2 col-xs-2">
             <img src="img/logo.png" alt="Ace Logo" class="img-responsive">
           </div>
-          <div class="title col-md-5 col-sm-10 col-xs-10">
-            <h3>African Center of Excellence</h3>
+          <div class="title col-md-5 col-sm-9 col-xs-9" id="acetitle">
+            <h3 class="titleres">African Center of Excellence</h3>
             <p>IN SOFTWARE ENGINEERING</p>
           </div>
-          <div class="menu col-md-6 col-sm-0 col-xs-0">
-            <ul>
+          <div class="menu col-md-5">
+            <ul class="navlinks">
               <li class="searchhide"><a href="index.html">Home</a></li>
               <li class="searchhide"><a href="">About</a></li>
               <li class="searchhide">
@@ -59,34 +62,33 @@
               </li>
               <li>
                 <a href="#" onmouseup="showSearch()" id="searchLogo">
+                  
                 <i class="fas fa-search realogo"></i>
+                <button type="button" class="close" id="closeSearch" style="display: none;">&times;</button>
                 </a>
               </li>
               <li ><a href="" class="btn btn-primary btn-lg" style="padding-right: 20px;padding-left: 20px; font-weight: 100;" >Login</a></li>
             </ul>
           </div>
+          <div class="navdrop col-md-1 col-sm-1 col-xs-1">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
         </div>
       </div>
     </nav>
     <section id="team">
-
-
-
       <div>
         <div class="teamimgcontain">
         </div>
       </div>
     </section>
-
-
     <section id="teamoverlay">
     </section>
 
     <section id="overlaydes">
       <div><h1>Home/Our Team</h1></div>
     </section>
-
-    <section id="zindex-carousel">
+    <section id="zindex-carousel"  style="width: 100%;">
         <div class="contain"> 
           <div class="meet" ><h1>Meet Our Team</h1></div>
           <div class="zindex">
