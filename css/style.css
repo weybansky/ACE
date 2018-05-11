@@ -5,6 +5,7 @@
 body{
 	
 	font-weight: 100;
+	width: 100%;
 }
 
 .btn{
@@ -60,6 +61,23 @@ nav#links ul > li a:hover{
 	color: #000;
 }
 
+nav#links div.topnavres{
+
+	padding: 0px 5px;
+	text-align: right;
+	font-size: 20px;
+}
+
+nav#links div.topnavres > a:hover{
+
+	text-decoration: none;
+	color: #fa9e3c;
+}
+
+/*nav#links div.topnavres > a > i:before{
+
+	display: none;
+}*/
 
 /*The Main Nav*/
 nav#main{
@@ -108,6 +126,8 @@ nav#main div.logo img{
 
 nav#main div.title{
 	color: #fff;
+	/*height: 90%;*/
+	transition: margin-top 0.5s ease-in-out;
 }
 
 nav#main div.title h3{
@@ -124,10 +144,26 @@ nav#main div.title p{
 
 }
 
+nav#main div.menu{
+
+	transition: all 0.5s ease-in-out;
+}
+
+nav#main div.navdrop{
+
+	transition: display 0.5s ease-in-out;
+}
+
+nav#main div.logo{
+
+	transition: all 0.5s ease-in-out;
+}
+
 nav#main div.menu > ul{
 	padding: 3px;
 	margin: 25px 0px;
 	text-align: right;
+	/*display: inline-block;*/
 }
 
 nav#main div.menu li{
@@ -160,6 +196,194 @@ nav#main div.menu li > a:hover{
 	color: #fa9e3c;
 }
 
+nav#main div.navdrop{
+
+	padding: 3px;
+	margin: 40px 0px;
+	/*display: none;*/
+	/*visibility: hidden;*/
+
+}
+
+nav#main div.navdrop > a{
+
+	width: 50px;
+	height: 50px;
+	color: white;
+
+}
+
+nav#main div.navdrop > a:hover{
+
+	color: #fa9e3c;
+	text-decoration: none;
+}
+
+/*nav#main .icon{
+
+	display: none;
+}*/
+
+@media screen and (max-width: 1250px){
+
+	
+
+	#news .img-responsive{
+
+		width: auto;
+		height: auto;
+	}
+
+	section#news{
+
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 1000px) {
+  .menu  {display: none;}
+  .navdrop{
+  	float: right;
+    display: block;
+    visibility: visible;
+  }
+
+  nav#main div#acetitle{
+
+  	margin-top: 0px;
+  }
+
+  #news .img-rsponsive{
+
+  	margin-left: 0px;
+  }
+
+  #news .newsheader{
+
+  	width: 200px;
+  	height: 200px;
+  }
+
+	section#our-goals{
+
+		height: 450px;
+	}
+
+
+section.events div.lastevent{
+
+  	position: relative;
+  	z-index: 1;
+  	box-shadow: -5px -5px grey;
+  	margin-left: -150px;
+  }
+
+}
+
+@media screen and (max-width: 800px){
+
+	nav#main div#acetitle{
+	visibility: hidden;
+	/*display: none;*/
+  	margin-top: -20px;
+  	font-size: 10px;
+
+  }
+
+  section#newSlider div.container > h2#ace-news{
+
+
+  }
+
+  nav#main div#acetitle:after{
+  	visibility: visible;
+  	display: block;
+	content: 'ACE';
+	font-weight: normal;
+	font-size: 40px;
+	font-family: 'Roboto', sans-serif;
+	position: absolute;
+	top: 1px;
+	letter-spacing: 5px;
+	margin-top: 30px;
+
+  }
+
+  #main{
+	
+	background-color: #0d59afd6;
+
+  }
+
+  nav#links .topnav{
+
+		display: none;
+	}
+
+	nav#links .topnavres{
+
+		text-align: right;
+		padding: 5px 10px;
+	}
+	
+	.slidernews{
+
+		width: 100%;
+		padding: 0px;
+		/*margin-left: -10px;*/
+	}
+
+	section#slider div.picslider{
+
+		display: none;
+	}
+
+	section.events div.secondevent{
+
+		margin-left: -150px;
+	}
+
+}
+
+@media screen and  (max-width: 520px){
+
+	section.events div.secondevent{
+
+		margin-left: -200px;
+	}
+
+	section.events div.lastevent{
+
+		margin-left: -200px;
+
+	}
+
+	section#our-goalss p#aboutus{
+
+	display: none;
+  }
+
+	section#our-goalss h1{
+
+		display: none;
+	}
+}
+
+@media screen and (max-width: 400px){
+
+	section.events div.lastevent{
+
+		display: none;
+	}
+}
+
+	section#our-goalss div.goals{
+
+		margin-bottom: 400px;
+
+	}
+
 /*nav#main div.menu li > i:hover{
 	
 	color: #fa9e3c;
@@ -169,14 +393,15 @@ nav#main div.menu li > a:hover{
 section#our-goals{
 	margin-bottom: 20px;
 	background: url(../img/back9.jpg) no-repeat;
-	background-position: center -220px;
-	background-size: cover;
+	background-position: center 100%;
+	background-size: 100%;
 	height: 650px;
 	padding-top: 170px;
 	margin-top: -180px;
 	background-attachment: fixed;
 	box-shadow: 0px 1px 20px #555;
-	-webkit-transition:background 2s ease-in-out;
+	-webkit-transition:all 2s ease-in-out;
+
   	/*opacity: 0.85;*/
   	/*background-color: black;*/
   	/*filter: alpha(opacity=60); /* For IE8 and earlier */*/
@@ -255,6 +480,8 @@ section#our-goalss > div.goals p a{
 	padding: 10px 20px;
 	font-size: 16px;
 	background-color: #0d59afd6;
+	-webkit-transition:all 0.5s ease-in-out;
+
 }
 
 #contactus{
@@ -289,7 +516,7 @@ section#news{
 	-webkit-transition:margin-left 0.7s ease-in-out;
 	display: inline-block;
 	position: relative;
-	width: 1200px;
+	width: 100%;
 	margin-left: -1300px;
 	/*min-height: 500px;*/
 
@@ -322,6 +549,7 @@ section#news div.row img.news{
 section#news div.row div.newsheader{
 
 	-webkit-transition: box-shadow 0.4s ease-in-out;
+	transition: all 0.5s ease-in-out;
 }
 
 section#news > div.row > div.image:hover{
@@ -356,22 +584,29 @@ section#news div.newsheader1:hover{
 }
 
 section#slider{
-	width: 825px;
+	width: 100%;
 	display: inline-block;
 	box-shadow: 0.1px 0px 12px black;
 	border-radius: 5px;
+	padding: 10px;
+	transition: all 0.5s ease-in-out;
 }
 
 section#slider div.item{
 	border-radius: 5px;
 }
 
+section#slider div.sliderimages{
+
+	margin-top: 10px;
+}
+
 section#description{
 	display: inline-block;
-	margin-left: 30px;
+	margin-left: 0px;
 	background-color: white;
 	height: 400px;
-	width: 390px;
+	width: 100%;
 	border-radius: 5px;
 	margin-top: 10px;
 	box-shadow: 1px 0px 12px black;
@@ -411,14 +646,17 @@ section#description div > p{
 
 
 /*--------------------------------------*/
-.events{
+section.events{
     background-color: white;
     height: 500px;
+    width: 100%;
 }
 
 section.events div.container{
-	margin-left: 130px;
-	margin-top: 50px;
+	width: 100%;
+	padding-left: 130px;
+	padding-top: 50px;
+	height: 100%;
 }
 
 section.events div.sampleevents{
@@ -428,31 +666,12 @@ section.events div.sampleevents{
     box-shadow: 1px 3px 9px #0d59afd6; 
     border-radius: 12px;
     background-color: white;
-    -webkit-transition:background-color 1s ease-in-out;
+    /*-webkit-transition:background-color 1s ease-in-out;*/
+    -webkit-transition: all 0.5s ease-in-out;
 }
 
 
 /*--------------------------------------*/
-.events{
-    background-color: white;
-    height: 500px;
-}
-
-section.events div.container{
-	margin-left: 130px;
-	margin-top: 50px;
-}
-
-section.events div.sampleevents{
-    width: 250px;
-    height: 300px;
-    border: 1px solid #0d59afd6;
-    box-shadow: 1px 3px 9px #0d59afd6; 
-    border-radius: 12px;
-    background-color: white;
-    -webkit-transition:background-color 1s ease-in-out;
-}
-
 section.events div.sampleevents:hover{
     background-color: goldenrod;
     font-size: 18px;
