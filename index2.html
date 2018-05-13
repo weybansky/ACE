@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ACE | OAU</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/styleteam.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      @media (max-width: 991px) {
+        nav#links{
+          font-size: 12px;
+        }
+        /* The Main nav */
+        nav#main {
+          height: 70px;
+        }
+        nav#main div.title h3{
+          margin: 0px;
+          font-weight: normal;
+          padding: 12px 0px 5px 0px;
+          font-size: 24px;
+          font-family: 'Roboto', sans-serif;
+        }
+        nav#main div.title p {
+          letter-spacing: 3px;
+        }
+        nav#main div.menu > ul {
+          margin: 8px 0px;
+        }
+
+        /* The Background Slider */
+        section#our-goals {
+          height: 500px;
+          padding-top: 170px;
+          margin-top: -90px;
+        }
+
+        /* The coverOverlay */
+        section#coverOverlay{
+        	margin-bottom: 0px;
+        	height: 500px;
+          margin-top: -560px;
+        	padding-top: 540px;
+        }
+
+        /* Our Goals */
+        section#our-goalss > div.goals h1 {
+          font-size: 32px;
+          margin-top: 120px;
+        }
+        section#our-goalss > div.goals p#aboutus{
+        	padding: 0px 30px;
+        	font-size: 20px;
+        }
+        section#our-goalss > div.goals p a {
+          margin-top: 20px;
+          padding: 8px 15px;
+          font-size: 16px;
+        }
+
+      }
+    </style>
+</head>
+<body>
+  <nav id="links" class="nav">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <ul>
+            <li><a href="">OAU Official</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="">SPAEL</a></li>
+            <li><a href="">Project Deliveries</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <nav id="main">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="logo col-md-1 col-sm-1 col-xs-1">
+          <img src="../img/logo.png" alt="Ace Logo" class="img-responsive">
+        </div>
+
+        <div class="title col-md-5 col-sm-5 col-xs-10 col-xs-offset-1 col-sm-offset-0 col-md-offset-0">
+          <h3>African Center of Excellence</h3>
+          <p>IN SOFTWARE ENGINEERING</p>
+        </div>
+
+        <div class="menu col-md-6 col-sm-6 col-xs-12">
+          <ul>
+            <li class="searchhide"><a href="index.html">Home</a></li>
+            <li class="searchhide"><a href="">About</a></li>
+            <li class="searchhide">
+              <a onclick="downloadfooter()">Downloads</a>
+            </li>
+            <li>
+              <input type="text" name="search"
+              id="search" class="searc">
+            </li>
+            <li>
+              <a href="#" onmouseup="showSearch()" id="searchLogo">
+
+              <i class="fas fa-search realogo"></i>
+              <button type="button" class="close" id="closeSearch" style="display: none;">&times;</button>
+              </a>
+            </li>
+            <li ><a href="" class="btn btn-primary btn-lg" style="padding-right: 20px;padding-left: 20px; font-weight: 100;" >Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="our-goals">
+    <!-- The Background Slider -->
+  </section>
+
+  <section id="coverOverlay">
+
+  </section>
+
+  <section id="our-goalss">
+    <div class="text-center goals">
+      <h1>Our Goal</h1>
+      <p id="aboutus">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae doloremque asperiores modi repellendus, libero explicabo maxime nemo repellat! Sint voluptatibus nulla, magni aspernatur velit delectus ullam repellat explicabo veritatis! Exercitationem in, asperiores corporis perspiciatis ipsum voluptatibus amet? Consectetur voluptatibus facilis sint, molestiae voluptatum est illum ipsum numquam natus vitae iste.</p>
+      <p>
+        <a href="" class="btn">See Our Objectives</a>
+      </p>
+    </div>
+  </section>
+
+  <section id="newSlider">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-10 col-lg-10">
+          <section id="news">
+            <div class="container">
+
+              <h2 class="title text-center">ACE News</h2>
+              <div class="row">
+
+                <div class="col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-1 col-sm-4 col-sm-offset-1 col-xs-12 col-xs-offset-0 image" onmouseover="showPointer()" onmouseleave="hidePointer()">
+                  <img class="news" src="img/news.png" alt="">
+                  <i class="fas pointer"></i>
+                </div>
+
+                <div class="col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-1 col-sm-4 col-sm-offset-1 col-xs-12 col-xs-offset-0 newsheader newsheader1" >
+                  <h3><a href="">Post title</a></h3>
+                  <div class="row">
+                  	<div class="col-md-12 col-lg-12" style="padding-bottom: 30px;">
+                  		<img src="img/back1.jpg" alt="" class="img-responsive">
+                  	</div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-1 col-sm-4 col-sm-offset-1 col-xs-12 col-xs-offset-0 newsheader newsheader1" >
+                  <h3><a href="">Post title</a></h3>
+                  <div class="row">
+                  	<div class="col-md-12 col-lg-12" style="padding-bottom: 30px;">
+                  		<img src="img/back5.jpg" alt="" class="img-responsive">
+                  	</div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-1 col-sm-4 col-sm-offset-1 col-xs-12 col-xs-offset-0 newsheader newsheader1" >
+                  <h3><a href="">Post title</a></h3>
+                  <div class="row">
+                  	<div class="col-md-12 col-lg-12" style="padding-bottom: 30px;">
+                  		<img src="img/back3.jpg" alt="" class="img-responsive">
+                  	</div>
+                  </div>
+                </div>
+
+
+            </div>
+          </div>
+        </section>
+        </div>
+        <div class="col-md-1 col-md-offset-1 col-lg-1 col-lg-offset-1" >
+          <div id="contactus" data-toggle="modal" data-target="#myModal">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background-color: #0d59afd6;">
+    <section id="slider" onmouseover="clearInt()" onmouseleave="setInt()">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-9 col-lg-9 col-sm-12 col-xs-12" style="padding: 0px;">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="4000">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+              <div class="item active" style="width: 100%;height: 400px !important;overflow: hidden;">
+                <img src="img/back1.jpg" alt="..." style="width: 100%;height: 400px;">
+              </div>
+              <div class="item">
+                <a href="profile.html" style="width: 100%;height: 400px !important;overflow: hidden;">
+                  <img src="img/back2.jpg" alt="..." style="width: 100%;height: 400px;">
+                </a>
+              </div>
+              <div class="item" style="width: 100%;height: 400px !important;overflow: hidden;">
+                <img src="img/back.jpg" alt="..." style="width: 100%;height: 400px;">
+              </div>
+
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="false"></span>
+                 <!-- <span class="fas fa-chevron-left"></span> -->
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <!-- <span class="fas fa-chevron-right"></span> -->
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12">
+            <section id="description">
+              <div id="firstnews" class="col-md-12">
+                <p>
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi incidunt provident porro
+                </p>
+              </div>
+              <div id="secondnews" class="col-md-12">
+                <p>
+                  Eligendi incidunt provident porro quos tempora pariatur, ullam eum illum nihil beatae, ipsum
+                </p>
+              </div>
+              <div id="thirdnews" class="col-md-12">
+                <p>
+                  illum nihil beatae, ipsum similique. Eum veniam doloremque iusto omnis iure a fuga.
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!--For the events menu-->
+  <section class="events">
+    <div class="container">
+      <h3 class="text-center" style="color: #0d59afd6; font-size: 40px; margin-top: 40px;"> Upcoming Events</h3>
+      <div class="row">
+
+        <div class="col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1 sampleevents" >
+          <h4>Event 1</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qui</p>
+        </div>
+        <div class="col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1 sampleevents">
+          <h4>Event 2</h4>
+          <p>s nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
+         </div>
+        <div class="col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1 sampleevents ">
+          <h4>Event 3</h4>
+          <p> voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- for the contact us modal content-->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-md imgHolder">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="text-center">Contact Us</h3>
+        </div>
+        <div class="modal-body">
+          <form class="" action="index.html" method="post">
+            <div class="form-group">
+              <label for="name"></label>
+              <input type="text" name="name" placeholder="Full Name" required class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="email"></label>
+              <input type="email" name="email" placeholder="example@example.com" required class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="message"></label>
+              <textarea name="message" class="form-control" placeholder="Your message" required></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-warning form-control" name="button">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="downloads">
+    <div class="container-fluid">
+      <div class="row">
+
+        <h1 align="center" id="downloadfooter">Downloads</h1>
+
+        <div class="col-md-12 col-sm-12 col-xs-12">
+         <ul class="nav nav-tabs nav-justified">
+           <li onclick="page1()" class="tab1"><a>Download  1</a></li>
+            <li onclick="page2()" class="tab2"><a>Download 2</a></li>
+            <li onclick="page3()" class="tab3"><a>Download 3</a></li>
+          </ul>
+
+          <div class="listdivs page1">
+            <ul>
+              <li class="toplist"><i class="fas fa-angle-double-down"></i>    Financial Management</li>
+              <ul>
+                <li> <a href="">ACE Receipt and Expenditure from inception to june 2016</a></li>
+                  <li><a href="">Interim Detailed Report</a></li>
+                  <li><a href="">2015 Fm</a></li>
+                  <li><a href="">2014 Detailed Report</a></li>
+                 <li><a href="">OAU ACE IFR REPORT MAY TO JUNE 2017</a></li>
+                  <li><a href="">BANK-RECONCILIATION-FOR-OAK- PARK-June2017</a></li>
+                  <li><a href="">CASH-BOOK-FOR-OAK-PARK-JAN-JUNE-2017</a></li>
+                  <li><a href="">Externally-Generated-Revenue</a></li>
+                  <li><a href="">Financial-Statements-for-theYear-Ended-2016</a></li>
+                  <li><a href="">IFR-REPORT-JAN-SEPT-2017</a></li>
+              </ul>
+            </ul>
+          </div>
+          <div class="listdivs page1" style="vertical-align: 55px;">
+             <ul>
+              <li class="toplist"><i class="fas fa-angle-double-down"></i>   Audit Report</li>
+              <ul>
+                <li><a href="">2016 Interim Audit Report</a></li>
+                  <li><a href="">Audit</a></li>
+                  <li><a href="">2014 AR</a></li>
+                  <li><a href="">Internal-Audit-Report-ACE-OAK-Park-Jan2017-June-2017</a></li>
+                  <li><a href="">Decision-Extract-on-Functional-Audit-Report-under-the-OAU-Governing-Council-June-2017</a></li>
+                  <li><a href="">Audit-Committee-Members</a></li>
+                  <li><a href="">Management-Control-Report-on-Audit-of-ACE-for-the-year-ended-2016</a></li>
+                  <li><a href="">Audit-Committee-Members</a></li>
+              </ul>
+            </ul>
+          </div>
+          <div class="listdivs page2" style="vertical-align: 55px;">
+             <ul>
+              <li class="toplist"><i class="fas fa-angle-double-down"></i>   ACE Receipt and Expenditure from inception to june 2016</li>
+              <ul>
+                <li><a href="">Contract Agreement</a></li>
+                <li><a href="">Notification of Award</a></li>
+                <li><a href="">Milestone 1</a></li>
+                <li><a href="">Governing Structure</a></li>
+              </ul>
+            </ul>
+          </div>
+          <div class="listdivs page2" style="vertical-align: 55px;">
+             <ul>
+              <li class="toplist"><i class="fas fa-angle-double-down"></i>  Procurement</li>
+              <ul>
+                <li><a href="">Goods</a></li>
+                <li><a href="">WORKS</a></li>
+                <li><a href="">CONSULTATION</a></li>
+                <li><a href="">2016_PROCUREMENT-PLAN</a></li>
+
+              </ul>
+            </ul>
+          </div>
+          <div class="listdivs page2" style="vertical-align: 145px;">
+             <ul>
+              <li class="toplist"><i class="fas fa-angle-double-down"></i>  Management Control</li>
+              <ul>
+               <li><a href="">Management Control Report</a></li>
+              </ul>
+            </ul>
+          </div>
+          <div class="listdivs page3" style="vertical-align:70px;">
+             <ul>
+              <li class="toplist"><i class="fas fa-angle-double-down"></i>  Proposed Calendar for Short term Course</li>
+              <ul>
+               <li><a href="">Proposed Calendar for Short Term Course</a></li>
+              </ul>
+            </ul>
+          </div>
+          <div class="listdivs page3">
+             <ul>
+              <li class="toplist"><i class="fas fa-angle-double-down"></i>  Safeguard</li>
+              <ul>
+                <li><a href="">REPORT ON TECHNICAL MEETING FOR SAFEGUARD OFFICERS OF ACE <br> PROJECTS BY WORLD BANK SAFEGUARD TEAM. HELD AT NUC, ABUJA FROM 4TH TO 5TH OCTOBER, 2015</a></li>
+                <li><a href="">TERMS OF REFERENCE FOR THE CONDUCT OF ESMP FOR AFRICAN CENTRE <br> OF EXCELLENCE, OAU ICT-DRIVEN KNOWLEDGE PARK (OAK-PARK), <br> s\OBAFEMI AWOLOWO UNIVERSITY, ILE-IFE, NIGERIA</a></li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footertext">Africa Center for Excellence</div>
+  </footer>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/teamscript.js"></script>
+
+  </body>
+</html>

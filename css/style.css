@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 */
 body{
-	
+
 	font-weight: 100;
 }
 
@@ -63,7 +63,7 @@ nav#links ul > li a:hover{
 
 /*The Main Nav*/
 nav#main{
-	
+
 	position: relative;
 	z-index: 7;
 	 height: 100px;
@@ -114,7 +114,7 @@ nav#main div.title h3{
 	margin: 0px;
 	font-weight: normal;
 	padding: 15px 0px 5px 0px;
-	font-size: 40px;
+	font-size: 36px;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -161,7 +161,7 @@ nav#main div.menu li > a:hover{
 }
 
 /*nav#main div.menu li > i:hover{
-	
+
 	color: #fa9e3c;
 }
 */
@@ -169,7 +169,6 @@ nav#main div.menu li > a:hover{
 section#our-goals{
 	margin-bottom: 20px;
 	background: url(../img/back9.jpg) no-repeat;
-	background-position: center -220px;
 	background-size: cover;
 	height: 650px;
 	padding-top: 170px;
@@ -177,78 +176,39 @@ section#our-goals{
 	background-attachment: fixed;
 	box-shadow: 0px 1px 20px #555;
 	-webkit-transition:background 2s ease-in-out;
-  	/*opacity: 0.85;*/
-  	/*background-color: black;*/
-  	/*filter: alpha(opacity=60); /* For IE8 and earlier */*/
-	/*position: relative;
-	z-index: 6;*/
-
-
 }
 
 section#coverOverlay{
-
 	margin-bottom: 20px;
-	/*background: url(../img/deolu2.jpg) no-repeat;*/
-	/*background-position: center -220px;*/
-	/*background-size: cover;*/
 	height: 630px;
 	padding-top: 170px;
 	margin-top: -650px;
 	background-attachment: fixed;
 	box-shadow: 0px 1px 20px #555;
 	-webkit-transition:background 2s ease-in-out;
-  	opacity: 0.75;
-  	background-color: black;
-
-}
-
-section#coverOverlay{
-
-	margin-bottom: 20px;
-	/*background: url(../img/deolu2.jpg) no-repeat;*/
-	/*background-position: center -220px;*/
-	/*background-size: cover;*/
-	height: 630px;
-	padding-top: 170px;
-	margin-top: -650px;
-	background-attachment: fixed;
-	box-shadow: 0px 1px 20px #555;
-	-webkit-transition:background 2s ease-in-out;
-  	opacity: 0.75;
-  	background-color: black;
+	opacity: 0.75;
+	background-color: black;
 
 }
 
 section#our-goalss{
-
 	margin-top: -500px;
 	position: relative;
-	z-index: 6;
+	z-index: 2;
 }
-
-
 section#our-goalss > div{
-
 	margin: 50px auto;
 	max-width: 1000px;
 }
-
 section#our-goalss > div.goals h1{
-
 	font-size: 60px;
 	color: #fff;
 }
-
 section#our-goalss > div.goals p#aboutus{
-
-	font-weight: 400px;
 	color:white;
 	padding: 0px 70px;
 	font-size: 25px;
-
 }
-
 section#our-goalss > div.goals p a{
 	margin-top: 20px;
 	color: #fff;
@@ -257,8 +217,13 @@ section#our-goalss > div.goals p a{
 	background-color: #0d59afd6;
 }
 
-#contactus{
 
+
+
+
+
+
+#contactus{
 	width: 200px;
 	height: 50px;
 	background-color: #fa9e3c;
@@ -267,7 +232,6 @@ section#our-goalss > div.goals p a{
 	position: fixed;
 	z-index: 2;
 	-webkit-transition:margin-left 0.4s ease-in-out;
-
 }
 
 #contactus:hover{
@@ -281,7 +245,7 @@ section#our-goalss > div.goals p a{
 
 
 section#newSlider{
-	margin-top: 200px;
+	margin-top: 150px;
 	margin-bottom: 100px;
 }
 
@@ -289,10 +253,14 @@ section#news{
 	-webkit-transition:margin-left 0.7s ease-in-out;
 	display: inline-block;
 	position: relative;
-	width: 1200px;
+	/* width: 1200px; */
 	margin-left: -1300px;
 	/*min-height: 500px;*/
 
+}
+
+section#news .title{
+	 margin-bottom: 30px;
 }
 
 section#news div.row > div.image{
@@ -327,7 +295,7 @@ section#news div.row div.newsheader{
 section#news > div.row > div.image:hover{
 	border-bottom: 0px;
 	transform: rotate(10deg);
-	content: "\f0a4"; 
+	content: "\f0a4";
 }
 
 /*fa-arrow-right*/
@@ -338,11 +306,11 @@ section#news > div.row > div.image:hover{
 	75%	{border-top: 1px solid;border-top-color: red;}
 	100%{border-right: 1px solid;border-right-color: red;}
 
-} 
+}
 */
 
 section#news > div.row > div.post{
-	
+
 	font-weight: normal;
 	/*border-bottom: 3px solid #aaa;*/
 	box-shadow: 0px 5px 12px #ddd;
@@ -351,12 +319,11 @@ section#news > div.row > div.post{
 
 
 section#news div.newsheader1:hover{
-
 	box-shadow: 0px 35px 12px #ddd;
 }
 
 section#slider{
-	width: 825px;
+	/* width: 825px; */
 	display: inline-block;
 	box-shadow: 0.1px 0px 12px black;
 	border-radius: 5px;
@@ -368,10 +335,10 @@ section#slider div.item{
 
 section#description{
 	display: inline-block;
-	margin-left: 30px;
+	/* margin-left: 30px; */
 	background-color: white;
 	height: 400px;
-	width: 390px;
+	/* width: 390px; */
 	border-radius: 5px;
 	margin-top: 10px;
 	box-shadow: 1px 0px 12px black;
@@ -381,7 +348,7 @@ section#description div{
 
 	-webkit-transition: box-shadow 0.4s;
 	height: 120px;
-	box-shadow: 0px 5px 2px #ddd; 
+	box-shadow: 0px 5px 2px #ddd;
 	border-bottom: 5px;
 	padding: 20px;
 }
@@ -432,7 +399,7 @@ div.meet h1{
 section#zindex-carousel{
 	height:500px;
 	margin-bottom: 80px;
-	
+
 }
 section#zindex-carousel img{
 		/*padding-right: 10px;*/
@@ -446,7 +413,7 @@ div.contain{
 }
 div.meet{
 	margin-bottom: 40px;
-	
+
 }
 
 div.overlaysolz{
@@ -461,7 +428,7 @@ div.overlaysolz{
   transition: 1s ease;
   background-color: white;
   padding-top: 55px;
-  
+
  }
 .solz:hover .overlaysolz{
   opacity: 1;
@@ -484,7 +451,7 @@ div.overlayweybtech{
   transition: 1s ease;
   background-color: white;
   padding-top: 55px;
- 
+
  }
 .weybtech:hover .overlayweybtech{
   opacity: 1;
@@ -623,7 +590,7 @@ div.dee{
     left: 100px;
 	right: 0px;
 	z-index: 4;
-	
+
 }
 div.kupe{
 	position:absolute;
@@ -647,7 +614,7 @@ div.weybtech{
 	top: 460px;
 	left: 541px;
 	position: absolute;
-	z-index: 2; 
+	z-index: 2;
 }
 .weybtech:hover .weybtech{
 	z-index: 5;
@@ -660,10 +627,9 @@ div.solz{
 }
 div.dav{
 	top: 390px;
-    left: 829px;
+  left: 829px;
 	position: absolute;
 	z-index: 1;
-}
 }
 
 /*THE NEXT SECTION*/
@@ -671,10 +637,9 @@ div.dav{
 	background-color: #333333d6;
 	/*opacity:1;*/
 	width: 100%;
-	margin-bottom: 200px;
 }
 #downloads li{
-	list-style-type: none; 
+	list-style-type: none;
 }
 #downloads a:hover{
 	text-decoration: none;
@@ -709,37 +674,13 @@ div.dav{
     height: 500px;
 }
 
-section.events div.container{
-	margin-left: 130px;
-	margin-top: 50px;
-}
-
 section.events div.sampleevents{
-    width: 250px;
+    /* width: 250px; */
     height: 300px;
+		padding-top: 10px;
+		padding-bottom: 10px;
     border: 1px solid #0d59afd6;
-    box-shadow: 1px 3px 9px #0d59afd6; 
-    border-radius: 12px;
-    background-color: white;
-    -webkit-transition:background-color 1s ease-in-out;
-}
-
-/*--------------------------------------*/
-.events{
-    background-color: white;
-    height: 500px;
-}
-
-section.events div.container{
-	margin-left: 130px;
-	margin-top: 50px;
-}
-
-section.events div.sampleevents{
-    width: 250px;
-    height: 300px;
-    border: 1px solid #0d59afd6;
-    box-shadow: 1px 3px 9px #0d59afd6; 
+    box-shadow: 1px 3px 9px #0d59afd6;
     border-radius: 12px;
     background-color: white;
     -webkit-transition:background-color 1s ease-in-out;
@@ -747,8 +688,7 @@ section.events div.sampleevents{
 
 section.events div.sampleevents:hover{
     background-color: goldenrod;
-    font-size: 18px;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 section.events div.row{
@@ -771,4 +711,3 @@ footer.footer div.footertext{
 	font-size: 15px;
 
 }
-
