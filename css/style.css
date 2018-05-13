@@ -600,7 +600,7 @@ div.kupe{
 }
 div.kenny{
 	position: absolute;
-	top: 550px;
+	top: 600px;
     left: 700px;
 	z-index: 3;
 }
@@ -611,7 +611,7 @@ div.ogo{
 	z-index: 4;
 }
 div.weybtech{
-	top: 460px;
+	top: 400px;
 	left: 541px;
 	position: absolute;
 	z-index: 2;
@@ -626,7 +626,7 @@ div.solz{
 	z-index: 1;
 }
 div.dav{
-	top: 390px;
+	top: 400px;
   left: 829px;
 	position: absolute;
 	z-index: 1;
