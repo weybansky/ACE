@@ -7,24 +7,28 @@
     <title>ACE | OAU</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="font-awesome/css/fontawesome-all.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styleteam.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/styleteam.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="script" type="text/javascript" href="jquery.js">
     <link rel="script" type="text/javascript" href="script.js">
 </head>
 <body>
-    <nav id="links" class="">
+    <nav id="links">
       <div class="container">
         <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-11 col-sm-10 col-xs-0 topnav">
               <ul>
                 <li><a href="">OAU Official</a></li>
 
                 <li><a href="team.html">Team</a></li>
+
               <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="">SPAEL</a></li>
                 <li><a href="">Project Deliveries</a></li>
               </ul>
+            </div>
+            <div class="col-md-1 col-sm-2 col-xs-12 topnavres">
+            	<a href="javascript:void(0);" class="icon" onclick="myFunction()">Links<i class="fas fa-angle-double-down ddd"></i></a>
             </div>
         </div>
       </div>
@@ -33,19 +37,19 @@
     <nav id="main">
       <div class="container-fluid">
         <div class="row">
-          <div class="logo col-md-1 col-sm-1">
+          <div class="logo col-md-1 col-sm-2 col-xs-2">
             <img src="img/logo.png" alt="Ace Logo" class="img-responsive">
           </div>
-          <div class="title col-md-5 col-sm-5">
-            <h3>African Center of Excellence</h3>
+          <div class="title col-md-5 col-sm-9 col-xs-9" id="acetitle">
+            <h3 class="titleres">African Center of Excellence</h3>
             <p>IN SOFTWARE ENGINEERING</p>
           </div>
-          <div class="menu col-md-6 col-sm-6">
-            <ul>
+          <div class="menu col-md-5">
+            <ul class="navlinks">
               <li class="searchhide"><a href="index.html">Home</a></li>
               <li class="searchhide"><a href="">About</a></li>
               <li class="searchhide">
-                <a onclick="downloadfooter()">Downloads</a>
+                <a href="">Downloads</a>
                 <!-- <ul class="drop">
 
                 </ul> -->
@@ -65,6 +69,9 @@
               <li ><a href="" class="btn btn-primary btn-lg" style="padding-right: 20px;padding-left: 20px; font-weight: 100;" >Login</a></li>
             </ul>
           </div>
+          <div class="navdrop col-md-1 col-sm-1 col-xs-1">
+          	<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
         </div>
       </div>
     </nav>
@@ -78,7 +85,7 @@
     <section id="our-goalss">
     <div class="text-center goals">
         <h1>Our Goal</h1>
-        <p id="aboutus">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae doloremque asperiores modi repellendus, libero explicabo maxime nemo repellat! Sint voluptatibus nulla, magni aspernatur velit delectus ullam repellat explicabo veritatis! Exercitationem in, asperiores corporis perspiciatis ipsum voluptatibus amet? Consectetur voluptatibus facilis sint, molestiae voluptatum est illum ipsum numquam natus vitae iste.</p>
+        <p id="aboutus">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae doloremque asperiores modi repellendus, libero explicabo maxime nemo repellat! Sint voluptatibus nulla, magni aspernatur velit delectus ullam repellat explicabo.....
         <p>
           <a href="" class="btn">See Our Objectives</a>
         </p>
@@ -87,26 +94,27 @@
     <section style="width: 100%" id="newSlider">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-10 col-lg-10">
+          <div class="col-md-10 col-sm-10 col-xs-10">
           <section id="news">
-            <div class="container">
+            <div class="container-fluid" style="width: 100%;">
               <h2 class="title text-center" style="margin-bottom: 30px;">ACE News</h2>
-              <div class="container">
+              <div class="container-fluid">
               <div class="row">
-                <div class="col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-1 image" onmouseover="showPointer()" onmouseleave="hidePointer()" >
+                <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-5 col-xs-offset-1 image" onmouseover="showPointer()" onmouseleave="hidePointer()" >
                   <img class="news" src="img/news.png" alt="">
                   <i class="fas pointer"></i>
                 </div>
-                <div class="col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-1 newsheader newsheader1" >
+                <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-5 col-xs-offset-1  newsheader newsheader1" >
                   <h3><a href="">Post title</a></h3>
                   <div class="row">
-                  	<div class="col-md-12 col-lg-12" style="padding-bottom: 30px;">
+                  	<div class="col-md-12 col-sm-12 col-xs-12" style="padding-bottom: 30px;">
                   		<img src="img/back1.jpg" alt="" class="img-responsive">
                   	</div>
-
                   </div>
                 </div>
-                <div class="col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-1 newsheader newsheader1" >
+            </div>
+                <div class="row">
+                <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-5 col-xs-offset-1 newsheader newsheader1" >
                   <h3><a href="">Post title</a></h3>
                   <div class="row">
                   	<div class="col-md-12 col-lg-12" style="padding-bottom: 30px;">
@@ -115,7 +123,7 @@
 
                   </div>
                 </div>
-                <div class="col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-1 newsheader newsheader1" >
+                <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-5 col-xs-offset-1 newsheader newsheader1" >
                   <h3><a href="">Post title</a></h3>
                   <div class="row">
                   	<div class="col-md-12 col-lg-12" style="padding-bottom: 30px;">
@@ -124,9 +132,10 @@
 
                   </div>
                 </div>
+            </div>
           </section>
       </div>
-      <div class="col-md-1 col-md-offset-1 col-lg-1 col-lg-offset-1" >
+      <div class="col-md-1 col-md-offset-1 col-sm-2 col-xs-2" >
         <div id="contactus" data-toggle="modal" data-target="#myModal">
 
         </div>
@@ -135,9 +144,9 @@
   </section>
     <section style="background-color: #0d59afd6;">
       <section id="slider" onmouseover="clearInt()" onmouseleave="setInt()">
-        <div class="container-fluid">
-          <div class="row" style="width: 1100px;">
-            <div class="col-md-9 col-lg-9" style="padding: 0px;">
+        <div class="container-fluid" style="width: 100%; padding: 0px;">
+          <div class="row" style="width: 100%; margin: 0px;">
+            <div class="col-md-7 col-sm-7 col-xs-7 picslider" style="padding: 0px;">
               <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="4000">
               <!-- Indicators -->
               <ol class="carousel-indicators">
@@ -147,7 +156,7 @@
               </ol>
 
               <!-- Wrapper for slides -->
-              <div class="carousel-inner" role="listbox">
+              <div class="carousel-inner sliderimages" role="listbox">
                 <div class="item active" style="width: 100%;height: 400px !important;overflow: hidden;">
                   <img src="img/back1.jpg" alt="..." style="width: 100%;height: 400px;">
                 </div>
@@ -175,7 +184,7 @@
               </div>
             </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-5 col-sm-5 col-xs-5 slidernews">
               <section id="description">
         <div id="firstnews" class="col-md-12">
           <p>
@@ -201,12 +210,12 @@
 
     <!--For the events menu-->
     <section class="events">
-        <div class="container">
+        <div class="container-fluid">
           <h1 align="center" style=" color: #0d59afd6; font-size: 40px; margin-top: 40px;"> Upcoming Events</h1>
             <div class="row">
-                <div class="col-md-3 col-md-offset-1 sampleevents" > Event 1 <p>kjcvjhskbc vjbvnvj sjbnckbxv s vbxcbv hj bb v </p> </div>
-                <div class="col-md-3 col-md-offset-1 sampleevents"> Event 2 <p> ajhcvhgcbzhvcbjtyczhxvb kbj vhb xbz</p></div>
-                <div class="col-md-3 col-md-offset-1 sampleevents "> Event 3 <p> bvchgacbchuyfc vbnsCMXPhi zbhjbzxk m.zx gu k</p></div>
+                <div class="col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-12 col-xs-3 col-xs-offset-1 sampleevents" > Event 1 <p>kjcvjhskbc vjbvnvj sjbnckbxv s vbxcbv hj bb v </p> </div>
+                <div class="col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-3 col-xs-offset-1 secondevent sampleevents"> Event 2 <p> ajhcvhgcbzhvcbjtyczhxvb kbj vhb xbz</p></div>
+                <div class="col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-3 col-xs-offset-1 sampleevents lastevent"> Event 3 <p> bvchgacbchuyfc vbnsCMXPhi zbhjbzxk m.zx gu k</p></div>
             </div>
         </div>
     </section>

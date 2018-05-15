@@ -12,17 +12,22 @@
 
 </head>
 <body>
-    <nav id="links" class="">
+    <nav id="links">
       <div class="container">
         <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-11 col-sm-10 col-xs-0 topnav">
               <ul>
                 <li><a href="">OAU Official</a></li>
-                <li><a href="">Team</a></li>
-                <li><a href="">Gallery</a></li>
+
+                <li><a href="team.html">Team</a></li>
+
+              <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="">SPAEL</a></li>
                 <li><a href="">Project Deliveries</a></li>
               </ul>
+            </div>
+            <div class="col-md-1 col-sm-2 col-xs-12 topnavres">
+            	<a href="javascript:void(0);" class="icon" onclick="myFunction()">Links<i class="fas fa-angle-double-down ddd"></i></a>
             </div>
         </div>
       </div>
@@ -31,20 +36,21 @@
     <nav id="main">
       <div class="container-fluid">
         <div class="row">
-          <div class="logo col-md-1 col-sm-1">
+          <div class="logo col-md-1 col-sm-2 col-xs-2">
             <img src="img/logo.png" alt="Ace Logo" class="img-responsive">
           </div>
-          <div class="title col-md-5 col-sm-5">
-            <h3>African Center of Excellence</h3>
+          <div class="title col-md-5 col-sm-9 col-xs-9" id="acetitle">
+            <h3 class="titleres">African Center of Excellence</h3>
             <p>IN SOFTWARE ENGINEERING</p>
           </div>
-          <div class="menu col-md-6 col-sm-6">
-            <ul>
+          <div class="menu col-md-5">
+            <ul class="navlinks">
               <li class="searchhide"><a href="index.html">Home</a></li>
               <li class="searchhide"><a href="">About</a></li>
               <li class="searchhide">
                 <a href="">Downloads</a>
                 <!-- <ul class="drop">
+                  
                   
                 </ul> -->
 
@@ -55,11 +61,16 @@
               </li>
               <li>
                 <a href="#" onmouseup="showSearch()" id="searchLogo">
+                  
                 <i class="fas fa-search realogo"></i>
+                <button type="button" class="close" id="closeSearch" style="display: none;">&times;</button>
                 </a>
               </li>
               <li ><a href="" class="btn btn-primary btn-lg" style="padding-right: 20px;padding-left: 20px; font-weight: 100;" >Login</a></li>
             </ul>
+          </div>
+          <div class="navdrop col-md-1 col-sm-1 col-xs-1">
+          	<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
           </div>
         </div>
       </div>
@@ -67,53 +78,59 @@
     <section id="imageSection">
     	<div class="container-fluid imageContainer">
     		<div class="row">
-    			<div class="col-md-4 firstImage" data-toggle="modal" data-target="#myModal">
-    				<img src="img/back.jpg" onmouseover="populateModal(this)">
+    			<div class="col-md-4 col-sm-4 firstImage" data-toggle="modal" data-target="#myModal">
+    				<img class="img-responsive" src="img/back.jpg" onmouseover="populateModal(this)">
     			</div>
-    			<div class="col-md-4" data-toggle="modal" data-target="#myModal">
-    				<img src="img/back8.jpg" alt="" onclick="populateModal(this)">
+    			<div class="col-md-4 col-sm-4"  data-toggle="modal" data-target="#myModal">
+    				<img class="img-responsive" src="img/back8.jpg" alt="" onclick="populateModal(this)">
     			</div>
-    			<div class="col-md-4 lastImage" data-toggle="modal" data-target="#myModal">
-    				<img src="img/back7.jpg" alt="" onclick="populateModal(this)">
+    			<div class="col-md-4 col-sm-4 lastImage" data-toggle="modal" data-target="#myModal">
+    				<img class="img-responsive" src="img/back7.jpg" alt="" onclick="populateModal(this)">
     			</div>
     		</div>
     		<div class="row">
-    			<div class="col-md-4 firstImage" data-toggle="modal" data-target="#myModal">
+    			<div class="col-md-4 col-sm-4 firstImage" data-toggle="modal" data-target="#myModal">
     				<img src="img/back1.jpg" alt="" onclick="populateModal(this)">
     			</div>
-    			<div class="col-md-4" data-toggle="modal" data-target="#myModal">
-    				<img src="img/back2.jpg" alt="" onclick="populateModal(this)">
+    			<div class="col-md-4 col-sm-4"  data-toggle="modal" data-target="#myModal">
+    				<img src="img/back2.jpg" alt="" nclick="populateModal(this)">
     			</div>
-    			<div class="col-md-4 lastImage" data-toggle="modal" data-target="#myModal">
+    			<div class="col-md-4 col-sm-4 lastImage" data-toggle="modal" data-target="#myModal">
     				<img src="img/back3.jpg" alt="" onclick="populateModal(this)">
     			</div>
     		</div>
     		<div class="row">
-    			<div class="col-md-4 firstImage" data-toggle="modal" data-target="#myModal">
+    			<div class="col-md-4  col-sm-12 firstImage" data-toggle="modal" data-target="#myModal">
     				<img src="img/back4.jpg" alt="" onclick="populateModal(this)">
     			</div>
-    			<div class="col-md-4" data-toggle="modal" data-target="#myModal">
+    			<div class="col-md-4 col-sm-12"  data-toggle="modal" data-target="#myModal">
     				<img src="img/back5.jpg" alt="" onclick="populateModal(this)">
     			</div>
-    			<div class="col-md-4 lastImage" data-toggle="modal" data-target="#myModal">
+    			<div class="col-md-4  col-sm-12 lastImage" data-toggle="modal" data-target="#myModal">
     				<img src="img/back6.jpg" alt="" onclick="populateModal(this)">
     			</div>
     		</div>
     		<div class="row">
-    			<div class="col-md-4 firstImage" data-toggle="modal" data-target="#myModal">
+    			<div class="col-md-4 col-sm-12 firstImage" data-toggle="modal" data-target="#myModal">
     				<img src="img/back9.jpg" alt="" onclick="populateModal(this)">
     			</div>
-    			<div class="col-md-4" data-toggle="modal" data-target="#myModal">
+    			<div class="col-md-4 col-sm-12"  data-toggle="modal" data-target="#myModal">
     				<img src="img/back10.jpg" alt="" onclick="populateModal(this)">
     			</div>
-    			<div class="col-md-4 lastImage" data-toggle="modal" data-target="#myModal">
+    			<div class="col-md-4  col-sm-12 lastImage" data-toggle="modal" data-target="#myModal">
     				<img src="img/back11.jpg" alt="" onclick="populateModal(this)">
     			</div>
     		</div>
     	</div>
     </section>
 
-  <section class="imageOverlay">
+  <section>
+  	<div class="container-fluid">
+  		<div class="row">
+  			<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 imageOverlay">
+  			</div>
+  		</div>
+  	</div>
     
   </section>
 
