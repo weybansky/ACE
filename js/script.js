@@ -65,7 +65,7 @@ function myFunction() {
   		// alert('');
       $('#news').css('margin-left','0px');
       $('#news').css('padding-left','50px');
-  		// $('#news').css('margin-left','30px');
+  		// $('#news').css('margin-left','50px');
   		// $('#contactus').css('display', 'block');
 	}
 

@@ -9,143 +9,193 @@
     <link rel="stylesheet" href="font-awesome/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="css/styleteam.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="script" type="text/javascript" href="jquery.js">
-    <link rel="script" type="text/javascript" href="script.js">
+
+    <style>
+      @media (max-width: 991px) {
+        nav#links{
+          font-size: 12px;
+        }
+        /* The Main nav */
+        nav#main {
+          height: 70px;
+        }
+        nav#main div.title h3{
+          margin: 0px;
+          font-weight: normal;
+          padding: 12px 0px 5px 0px;
+          font-size: 24px;
+          font-family: 'Roboto', sans-serif;
+        }
+        nav#main div.title p {
+          letter-spacing: 3px;
+        }
+        nav#main div.menu > ul {
+          margin: 8px 0px;
+        }
+
+        /* The Background Slider */
+        section#our-goals {
+          height: 500px;
+          padding-top: 170px;
+          margin-top: -90px;
+        }
+
+        /* The coverOverlay */
+        section#coverOverlay{
+          margin-bottom: 0px;
+          height: 500px;
+          margin-top: -560px;
+          padding-top: 540px;
+        }
+
+        /* Our Goals */
+        section#our-goalss > div.goals h1 {
+          font-size: 32px;
+          margin-top: 120px;
+        }
+        section#our-goalss > div.goals p#aboutus{
+          padding: 0px 30px;
+          font-size: 20px;
+        }
+        section#our-goalss > div.goals p a {
+          margin-top: 20px;
+          padding: 8px 15px;
+          font-size: 16px;
+        }
+
+      }
+    </style>
 </head>
 <body>
-    <nav id="links" class="">
-      <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <ul>
-                <li><a href="">OAU Official</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="">SPAEL</a></li>
-                <li><a href="">Project Deliveries</a></li>
-              </ul>
-            </div>
+  <nav id="links" class="">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <ul>
+            <li><a href="">OAU Official</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="">SPAEL</a></li>
+            <li><a href="">Project Deliveries</a></li>
+          </ul>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <nav id="main">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="logo col-md-1 col-sm-1">
-            <img src="img/logo.png" alt="Ace Logo" class="img-responsive">
-          </div>
-          <div class="title col-md-5 col-sm-5">
-            <h3>African Center of Excellence</h3>
-            <p>IN SOFTWARE ENGINEERING</p>
-          </div>
-          <div class="menu col-md-6 col-sm-6">
-            <ul>
-              <li class="searchhide"><a href="index.html">Home</a></li>
-              <li class="searchhide"><a href="">About</a></li>
-              <li class="searchhide">
-                <a href="">Downloads</a>
-                <!-- <ul class="drop">
-                  
-                </ul> -->
+  <nav id="main">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="logo col-md-1 col-sm-1">
+          <img src="img/logo.png" alt="Ace Logo" class="img-responsive">
+        </div>
+        <div class="title col-md-5 col-sm-5">
+          <h3>African Center of Excellence</h3>
+          <p>IN SOFTWARE ENGINEERING</p>
+        </div>
+        <div class="menu col-md-6 col-sm-6">
+          <ul>
+            <li class="searchhide"><a href="index.html">Home</a></li>
+            <li class="searchhide"><a href="">About</a></li>
+            <li class="searchhide">
+              <a href="">Downloads</a>
+            </li>
+            <li>
+              <input type="text" name="search"
+              id="search" class="searc">
+            </li>
+            <li>
+              <a href="#" onmouseup="showSearch()" id="searchLogo">
+              <i class="fas fa-search realogo"></i>
+              </a>
+            </li>
+            <li ><a href="" class="btn btn-primary btn-lg" style="padding-right: 20px;padding-left: 20px; font-weight: 100;" >Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section id="team">
+    <div>
+      <div class="teamimgcontain">
+      </div>
+    </div>
+  </section>
 
-              </li>
-              <li>
-                <input type="text" name="search"
-                id="search" class="searc">
-              </li>
-              <li>
-                <a href="#" onmouseup="showSearch()" id="searchLogo">
-                <i class="fas fa-search realogo"></i>
-                </a>
-              </li>
-              <li ><a href="" class="btn btn-primary btn-lg" style="padding-right: 20px;padding-left: 20px; font-weight: 100;" >Login</a></li>
-            </ul>
+
+  <section id="teamoverlay">
+  </section>
+
+  <section id="overlaydes">
+    <div><h1>Home/Our Team</h1></div>
+  </section>
+
+  <section id="zindex-carousel">
+      <div class="contain">
+        <div class="meet" ><h1>Meet Our Team</h1></div>
+        <div class="zindex">
+          <div class="attrib solz">
+            <img src="img/back7.jpg" class="attrib"/>
+            <div class="overlay overlaysolz">
+              <p>Name: Ojuade Adesola</p>
+              <p>Department: Computer Science and Engineering</p>
+              <p>Level: 400</p>
+            </div>
+          </div>
+          <div class="attrib weybtech">
+            <img src="img/back8.jpg" class="attrib">
+             <div class="overlay overlayweybtech">
+              <p>Name: Nasir Abdulwahab</p>
+              <p>Department: Electrical and Electronic Engineering</p>
+              <p>Level: 400</p>
+            </div>
+          </div>
+          <div class="attrib dav" class="attrib">
+            <img src="img/back9.jpg" class="attrib">
+            <div class="overlay overlaydav">
+              <p>Name: Odeyinka David</p>
+              <p>Department: Computer Science and Engineering</p>
+              <p>Level: 400</p>
+            </div>
+          </div>
+          <div class="attrib elect dee">
+            <img src="img/back3.jpg" class="attrib">
+            <div class="overlaydee">
+              <p>Name: Ayangade Adeoluwa</p>
+              <p>Department: Electrical and Electronic Engineering</p>
+              <p>Level: 400</p>
+            </div>
+          </div>
+          <div class="attrib elect kupe">
+            <img src="img/back4.jpg" class="attrib">
+            <div class="overlaykupe">
+              <p>Name: Kuku Opemipo</p>
+              <p>Department: Electrical and Electronic Engineering</p>
+              <p>Level: 400</p>
+            </div>
+          </div>
+          <div class="attrib kenny">
+            <img src="img/back5.jpg" class="attrib">
+            <div class="overlaykenny">
+              <p>Name: Faleye Kehinde</p>
+              <p>Department: Computer Science and Engineering</p>
+              <p>Level: 400</p>
+            </div>
+          </div>
+          <div class="attrib elect ogo">
+            <img src="img/back6.jpg" class="attrib">
+            <div class="overlayogo">
+              <p>Name: Adedoyin Ogooluwa</p>
+              <p>Department: Computer Science and Engineering</p>
+              <p>Level: 400</p>
+            </div>
           </div>
         </div>
       </div>
-    </nav>
-    <section id="team">
-      <div>
-        <div class="teamimgcontain">
-        </div>
-      </div>
-    </section>
+  </section>
 
 
-    <section id="teamoverlay">
-    </section>
-
-    <section id="overlaydes">
-      <div><h1>Home/Our Team</h1></div>
-    </section>
-
-    <section id="zindex-carousel">
-        <div class="contain"> 
-          <div class="meet" ><h1>Meet Our Team</h1></div>
-          <div class="zindex">
-            <div class="attrib solz">
-              <img src="img/back7.jpg" class="attrib"/>
-              <div class="overlay overlaysolz">
-                <p>Name: Ojuade Adesola</p>
-                <p>Department: Computer Science and Engineering</p>
-                <p>Level: 400</p>
-              </div>
-            </div>
-            <div class="attrib weybtech">
-              <img src="img/back8.jpg" class="attrib">
-               <div class="overlay overlayweybtech">
-                <p>Name: Nasir Abdulwahab</p>
-                <p>Department: Electrical and Electronic Engineering</p>
-                <p>Level: 400</p>
-              </div>
-            </div>
-            <div class="attrib dav" class="attrib">
-              <img src="img/back9.jpg" class="attrib">
-              <div class="overlay overlaydav">
-                <p>Name: Odeyinka David</p>
-                <p>Department: Computer Science and Engineering</p>
-                <p>Level: 400</p>
-              </div>
-            </div>
-            <div class="attrib elect dee">
-              <img src="img/back3.jpg" class="attrib">
-              <div class="overlaydee">
-                <p>Name: Ayangade Adeoluwa</p>
-                <p>Department: Electrical and Electronic Engineering</p>
-                <p>Level: 400</p>
-              </div>
-            </div>
-            <div class="attrib elect kupe">
-              <img src="img/back4.jpg" class="attrib">
-              <div class="overlaykupe">
-                <p>Name: Kuku Opemipo</p>
-                <p>Department: Electrical and Electronic Engineering</p>
-                <p>Level: 400</p>
-              </div>
-            </div>
-            <div class="attrib kenny">
-              <img src="img/back5.jpg" class="attrib">
-              <div class="overlaykenny">
-                <p>Name: Faleye Kehinde</p>
-                <p>Department: Computer Science and Engineering</p>
-                <p>Level: 400</p>
-              </div>
-            </div>
-            <div class="attrib elect ogo">
-              <img src="img/back6.jpg" class="attrib">
-              <div class="overlayogo">
-                <p>Name: Adedoyin Ogooluwa</p>
-                <p>Department: Computer Science and Engineering</p>
-                <p>Level: 400</p>
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-    
-
-    <section id="downloads">
+  <section id="downloads">
       <div class="container-fluid">
         <div class="row">
           <h1 align="center">Downloads</h1>
@@ -241,9 +291,9 @@
       </div>
     </section>
 
- <footer class="footer"><div class="footertext">Africa Center for Excellence</div></footer>
-    
-    
+  <footer class="footer"><div class="footertext">Africa Center for Excellence</div></footer>
+
+
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/script.js"></script>
